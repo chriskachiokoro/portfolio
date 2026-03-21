@@ -1,83 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        text-align: center;
-      }
-      .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin-top: 20px;
-      }
-      img.profile {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      h1,
-      h2 {
-        color: #333;
-      }
-      .projects img {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 5px;
-        margin: 10px 0;
-      }
-      .project-item {
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img src="your-photo.jpg" alt="Your Profile Picture" class="profile" />
-      <h1>Your Name</h1>
-      <p>Data Scientist | Machine Learning | Cloud Computing</p>
-    </div>
 
-    <div class="container">
-      <h2>Work Experience</h2>
-      <p>
-        Currently pursuing a Master's in Data Science at Indiana University.
-        Part-time work experience in data-related roles. Hands-on expertise in
-        SQL, Power BI, Python, and cloud computing.
-      </p>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Okoro - Portfolio</title>
+    <meta name="description" content="Portfolio of Christopher Okoro, Data Scientist & Analyst.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
 
-    <div class="container projects">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>Cloud VM Bin-Packing Optimization</h3>
-        <p>
-          Developed and implemented bin-packing strategies for VM allocation on
-          Azure.
-        </p>
-        <img src="bin-packing.png" alt="Project Screenshot" />
-      </div>
-      <div class="project-item">
-        <h3>Power BI Server Report</h3>
-        <p>Created dynamic reports from CSV data using Power BI Server.</p>
-        <img src="powerbi-report.png" alt="Project Screenshot" />
-      </div>
-      <div class="project-item">
-        <h3>UMLS SQL Database</h3>
-        <p>Imported and managed a large UMLS dataset in PostgreSQL.</p>
-        <img src="umls-sql.png" alt="Project Screenshot" />
-      </div>
-    </div>
-  </body>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="activity" class="logo-icon"></i>
+                Welcome
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/docs/Resume.pdf" class="btn btn-outline nav-cta" download><i data-lucide="download"
+                            class="icon-sm"></i>Resume</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-cta">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Open to work</span>
+                <h1 class="hero-title">Christopher Okoro</h1>
+                <div class="hero-subtitle">
+                    <span class="role">Data Scientist</span>
+                    <span class="divider">•</span>
+                    <span class="role text-primary">Problem Solver</span>
+                </div>
+                <p class="hero-description">
+                    Turning complex datasets into actionable business strategies. Specialized in Python-based ETL
+                    workflows, machine learning models, statistical analysis, and narrative-driven data visualization.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="assets/docs/Resume.pdf" class="btn btn-outline" download>
+                        <i data-lucide="download" class="icon-sm"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-decoration"></div>
+                <img src="assets/images/profile_placeholder.jpg" alt="Christopher Okoro" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects-section bg-alt" id="projects">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Featured Projects</h2>
+                <p>A selection of my recent work bridging the gap between raw data and impactful business decisions.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="assets/images/project-1-placeholder.png" alt="Distributed Data Processing Pipeline"
+                            class="project-img">
+                        <div class="project-links">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/chriskachiokoro/distributed-etl-pipeline" class="icon-link"
+                                aria-label="View Project"><i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Distributed Data Processing Pipeline</h3>
+                        <p>Developed a distributed ETL pipeline with Google Cloud Dataflow and Apache Beam to process
+                            weekly Reddit data, enforce schema validation, and organize outputs into clean, filtered,
+                            quarantine, and logging layers.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Apache Beam</span>
+                            <span class="tag">Dataflow</span>
+                            <span class="tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="assets/images/project-2-placeholder.png" alt="Insurance Premium Forecasting"
+                            class="project-img">
+                        <div class="project-links">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://insurance-predictor-app-coo.streamlit.app"
+                                aria-label="Streamlit App Live Demo" style="display: flex; align-items: center;">
+                                <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App" style="height: 32px; border-radius: 4px; box-shadow: var(--shadow-sm);">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/chriskachiokoro/insurance-predictor-streamlit"
+                                class="icon-link" aria-label="View Project"><i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Insurance Premium Forecasting</h3>
+                        <p>Machine Learning Project. Built end-to-end ML pipelines (Logistic Regression, Random Forest,
+                            XGBoost) for premium classification and deployed via Streamlit.</p>
+                        <div class="tags">
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Hyperparameter Tuning</span>
+                            <span class="tag">Feature Engineering</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Placeholder) -->
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="assets/images/project-3-placeholder.png" alt="Additional Project" class="project-img">
+                        <div class="project-links">
+                            <a href="#" class="icon-link" aria-label="View Project"><i
+                                    data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Topic Modeling of Movies Reviews</h3>
+                        <p>Built an NLP pipeline to extract interpretable themes from IMDB movie reviews using
+                            BERTopic, transformer embeddings, and CountVectorizer. Refined preprocessing improved topic
+                            coherence and revealed 34 distinct topics across viewer discussions.</p>
+                        <div class="tags">
+                            <span class="tag">Topic Modeling</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">BERTopic</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="text-link">View all projects <i data-lucide="arrow-right" class="icon-sm"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="text-left">About Me</h2>
+                <div class="title-underline"></div>
+                <p>
+                    With experience in data-related roles spanning multiple industries, I thrive at the intersection of
+                    business strategy and technical execution. My journey started in Mechanical Engineering but
+                    transitioned into the transformative power of predictive modeling and data analytics.
+                </p>
+                <p>
+                    Today, I help companies derive actionable insights from their data. Whether it's building automated
+                    ETL pipelines (Air Liquide) or designing interactive Tableau dashboards (Exxon Mobil), my goal is
+                    always the same: making data work harder.
+                </p>
+
+                <div class="education-grid">
+                    <div class="edu-item">
+                        <span class="edu-degree">M.S. in Data Science</span>
+                        <span class="edu-school">Indiana University</span>
+                        <span class="edu-date">Aug 2024 - May 2026</span>
+                    </div>
+                    <div class="edu-item">
+                        <span class="edu-degree">B.S. Mechanical Engineering</span>
+                        <span class="edu-school">University of Lagos</span>
+                        <span class="edu-date">Oct 2021</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-content">
+                <h3 class="skills-title">Technical Expertise</h3>
+
+                <div class="skill-category">
+                    <h4>Languages & Frameworks</h4>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Tools & Cloud</h4>
+                    <div class="tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">AWS / GCP</span>
+                        <span class="tag">BigQuery</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Data Science Concepts</h4>
+                    <div class="tags">
+                        <span class="tag">Predictive Modeling</span>
+                        <span class="tag">A/B Testing</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Certifications</h4>
+                    <ul class="cert-list">
+                        <li><a href="assets/certificates/Google%20advanced%20data.pdf" target="_blank"
+                                class="text-link">Google Advanced Data Analytics Certificate</a></li>
+                        <li><a href="assets/certificates/IBM%20Final%20Cert.pdf" target="_blank" class="text-link">IBM
+                                Data Analyst Professional Certificate</a></li>
+                        <li><a href="assets/certificates/Python%20for%20data%20Science.pdf" target="_blank"
+                                class="text-link">Python for Data Science</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Whether you have a specific project in mind or just want to chat about data, my inbox is always open.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>chriskachi.okoro@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Houston / Katy, TX (Open to Relocation)</p>
+                            <p>Bloomington, IN (Open to Relocation)</p>
+                        </div>
+                    </div>
+                    <!-- <div class="contact-method">
+                        <div class="method-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>713-344-8636</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" action="mailto:chriskachi.okoro@gmail.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you today?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">
+                        Send Message <i data-lucide="send" class="icon-sm"></i>
+                    </button>
+                    <p class="form-disclaimer">Uses your default email client to send the message.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-alt">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i data-lucide="activity" class="logo-icon"></i>
+                    Christopher Okoro Portfolio
+                </a>
+                <p class="footer-tagline">Data Scientist specializing in machine learning, statistical modeling, and
+                    data
+                    visualization.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/chris-dataanalyst/" target="_blank" aria-label="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/chriskachiokoro" target="_blank" aria-label="GitHub"><i
+                            data-lucide="github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Christopher Okoro Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
