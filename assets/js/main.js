@@ -97,4 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // Intercept modal close link clicks to prevent page jumps
+  document.querySelectorAll('.modal-close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeModal();
+    });
+  });
 });
