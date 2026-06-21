@@ -641,7 +641,6 @@ section.block {
 }
 
 /* Opened Modal styling */
-.modal:target,
 .modal.active {
   display: flex;
 }
@@ -786,6 +785,14 @@ footer {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.footer-svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+  display: inline-block;
 }
 
 /* Responsive Media Queries */
